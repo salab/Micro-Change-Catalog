@@ -65,6 +65,8 @@ Micro-Changes for Conditionals
   - **Description:** Wrap an existing statement, within an if statement
     - "which is not in a if-block": why this condition is needed for this concept? It can form a nested if  
   - **Structure:** `$stmt;` → `if ($c) $stmt;`
+  - **Example:** [example](https://github.com/bennidi/mbassador/commit/e4b6a84ab8d2487fe610d294535f3f593b2f819c#diff-6c69416cf9d1692cfd8366cf53351054edabec1980e798bf0784884ae39d7d7dL92
+  )
   - **How to detect:** We consider only a simple case where the target statement was not in any if conditional block.  Find a move of a tree, which is not the descendant of a "IfStatement" before change. After change, it is the descendat of a "IfStatement".
 
 
